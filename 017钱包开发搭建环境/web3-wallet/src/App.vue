@@ -1,13 +1,15 @@
 <template>
-  <h1>{{ str }}</h1>
+  <!-- <h1>{{ str }}</h1>
   <van-button type="primary">12345</van-button>
-  <web3Api></web3Api>
+  <web3Api></web3Api> -->
+  <AccountSys></AccountSys>
 </template>
 
 <script setup>
 import { ref } from "vue";
 import Web3 from "web3";
 import web3Api from "./components/Web3Api.vue";
+import AccountSys from "./components/AccountSys.vue";
 
 const str = ref("hello123");
 

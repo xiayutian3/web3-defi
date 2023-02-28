@@ -68,7 +68,7 @@ const send = async () => {
   };
 
   //2.生成 serializeTx
-  // 转化私钥 16进制
+  // 转化私钥 16进制  第一个参数不是0x开头
   const privateKeyBuffer1 = Buffer(privateKey.value.slice(2), "hex"); //转化出来是一样的结果
   console.log("privateKeyBuffer1: ", privateKeyBuffer1);
   // const privateKeyBuffer = Buffer.from(privateKey.value.slice(2), "hex");
